@@ -1,0 +1,461 @@
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Class - Bimbingan Belajar, Les Private</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="LOGO INTERCLASS.jpg"  class="h-10">
+                <h1 class="text-xl font-bold text-gray-800">Inter Class - Bimbingan Belajar & Private</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-900 hover:text-blue-1000">Beranda</a>
+                <a href="#jadwal" class="text-blue-900 hover:text-blue-1000">Jadwal</a>
+                <a href="#ujian" class="text-blue-900 hover:text-blue-1000">Ujian</a>
+                <a href="#tentang" class="text-blue-900 hover:text-blue-1000">Tentang</a>
+            </div>
+            <div>
+                <a href="index2.html" id="loginBtn" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-1090 transition">Masuk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-16">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-4xl font-bold mb-4">Bimbel Privat Berkualitas Untuk Semua Kebutuhan Belajarmu</h2>
+                <p class="text-xl mb-6">Menjadi bimbingan belajar yang paling inovatif dan memberikan solusi berkelanjutan di bidang pendidikan Non-Formal.</p>
+                <div class="flex space-x-4">
+                <a href="#jadwal" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600">Tentor Kami</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="Tampilan.jpg" alt="Siswa SMP dan SMA sedang belajar bersama tentor dengan latar ruang belajar yang nyaman" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Schedule Section -->
+    <section id="jadwal" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Jadwal Mengajar</h2>
+            
+            <div class="mb-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <label for="monthSelect" class="block text-gray-700 mb-2">Pilih Hari:</label>
+                    <select id="monthSelect" class="px-4 py-2 border rounded-lg">
+                        <option value="1"selected>Senin</option>
+                        <option value="2">Selasa</option>
+                        <option value="3">Rabu</option>
+                        <option value="4">Kamis</option>
+                        <option value="5">Jumat</option>
+                        <option value="6">Sabtu</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="addSchedule" class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-900 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                        </svg>
+                        Tambah Jadwal
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Schedule Item 1 -->
+                <div class="schedule-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Matematika</h3>
+                            <p class="text-gray-600">Kelas 10 IPA</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Aktif</span>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Tanggal: 15 Maret 2024</p>
+                        <p class="text-sm text-gray-500">Waktu: 15:00 - 17:00 WIB</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6cad98df-528d-4f36-9eca-8dc3c3ea5031.png" alt="Foto tentor matematika pria dewasa dengan kacamata" class="h-10 w-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium text-gray-800">Bpk. Ahmad Fauzi</p>
+                            <p class="text-xs text-gray-500">Tentor Matematika</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Offline</span>
+                        <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">Detail &raquo;</button>
+                    </div>
+                </div>
+                
+                <!-- Schedule Item 2 -->
+                <div class="schedule-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Fisika</h3>
+                            <p class="text-gray-600">Kelas 12 IPA</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Menunggu Konfirmasi</span>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Tanggal: 18 Maret 2024</p>
+                        <p class="text-sm text-gray-500">Waktu: 13:00 - 15:00 WIB</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/19441e29-6568-44ea-b252-9be552bda55e.png" alt="Foto tentor fisika wanita dewasa dengan rambut pendek" class="h-10 w-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium text-gray-800">Ibu Siti Rahma</p>
+                            <p class="text-xs text-gray-500">Tentor Fisika</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Online</span>
+                        <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">Detail &raquo;</button>
+                    </div>
+                </div>
+                
+                <!-- Schedule Item 3 -->
+                <div class="schedule-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Bahasa Inggris</h3>
+                            <p class="text-gray-600">Kelas 11 IPA</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Aktif</span>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Tanggal: 20 Maret 2024</p>
+                        <p class="text-sm text-gray-500">Waktu: 16:00 - 18:00 WIB</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c2122339-a24f-45fe-ab80-22885ebb2016.png" alt="Foto tentor bahasa Inggris pria muda dengan senyum ramah" class="h-10 w-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium text-gray-800">Bpk. David Wilson</p>
+                            <p class="text-xs text-gray-500">Tentor Bahasa Inggris</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Online</span>
+                        <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">Detail &raquo;</button>
+                    </div>
+                </div>
+                
+                <!-- Schedule Item 4 -->
+                <div class="schedule-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Kimia</h3>
+                            <p class="text-gray-600">Kelas 12 IPA</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Selesai</span>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Tanggal: 5 Maret 2024</p>
+                        <p class="text-sm text-gray-500">Waktu: 14:00 - 16:00 WIB</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4aeec988-b4ca-49e1-8003-175dc59e9f3c.png" alt="Foto tentor kimia wanita paruh baya dengan ekspresi serius" class="h-10 w-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium text-blue-900">Ibu Dewi Setiawati</p>
+                            <p class="text-xs text-blue-900">Tentor Kimia</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-white-900 text-xs px-2 py-1 rounded">Offline</span>
+                        <button class="text-blue-600 hover:text-blue-900 text-sm font-medium">Detail &raquo;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Schedule Section -->
+    <section id="ujian" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Soal Ujian</h2>
+
+                <div>
+                    <button id="addSchedule" class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-900 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                        </svg>
+                        Tambah Soal Ujian
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Schedule Item 1 -->
+                <div class="schedule-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">SOAL UJIAN TKA</h3>
+                            <p class="text-gray-600">AL-AZHAR IPS</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Belum di nilai</span>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Tanggal: 15 Maret 2024</p>
+                        <p class="text-sm text-gray-500">Waktu: 15:00 - 17:00 WIB</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Belum</span>
+                        <a href="http://bit.ly/4lI20dR" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ujian &raquo;</a>
+                    </div>
+                </div>
+                
+                <!-- Schedule Item 2 -->
+                <div class="schedule-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                       <div>
+                            <h3 class="text-xl font-bold text-gray-800">SOAL UJIAN TKA</h3>
+                            <p class="text-gray-600">AL-AZHAR IPA</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Belum di nilai</span>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Tanggal: 18 Maret 2024</p>
+                        <p class="text-sm text-gray-500">Waktu: 13:00 - 15:00 WIB</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Belum</span>
+                        <a href="http://bit.ly/4o1GzpX" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ujian &raquo;</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Schedule Modal -->
+    <div id="scheduleModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg w-full max-w-md">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">Tambah Jadwal Baru</h3>
+                <button id="closeScheduleModal" class="text-gray-500 hover:text-gray-700">&times;</button>
+            </div>
+            
+            <form id="newScheduleForm">
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 mb-2">Mata Pelajaran</label>
+                    <select id="subject" class="w-full px-4 py-2 border rounded-lg">
+                        <option value="">Pilih Mata Pelajaran</option>
+                        <option value="matematika">Matematika</option>
+                        <option value="fisika">Fisika</option>
+                        <option value="kimia">Kimia</option>
+                        <option value="biologi">Biologi</option>
+                        <option value="bahasa_inggris">Bahasa Inggris</option>
+                        <option value="bahasa_indonesia">Bahasa Indonesia</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="class" class="block text-gray-700 mb-2">Kelas</label>
+                    <select id="class" class="w-full px-4 py-2 border rounded-lg">
+                        <option value="">Pilih Kelas</option>
+                        <option value="10_ipa">10 IPA</option>
+                        <option value="11_ipa">11 IPA</option>
+                        <option value="12_ipa">12 IPA</option>
+                        <option value="10_ips">10 IPS</option>
+                        <option value="11_ips">11 IPS</option>
+                        <option value="12_ips">12 IPS</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="date" class="block text-gray-700 mb-2">Tanggal</label>
+                    <input type="date" id="date" class="w-full px-4 py-2 border rounded-lg">
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="startTime" class="block text-gray-700 mb-2">Waktu Mulai</label>
+                        <input type="time" id="startTime" class="w-full px-4 py-2 border rounded-lg">
+                    </div>
+                    <div>
+                        <label for="endTime" class="block text-gray-700 mb-2">Waktu Selesai</label>
+                        <input type="time" id="endTime" class="w-full px-4 py-2 border rounded-lg">
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="type" class="block text-gray-700 mb-2">Tipe Sesi</label>
+                    <select id="type" class="w-full px-4 py-2 border rounded-lg">
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="notes" class="block text-gray-700 mb-2">Catatan (Opsional)</label>
+                    <textarea id="notes" rows="3" class="w-full px-4 py-2 border rounded-lg" placeholder="Tambah catatan jika diperlukan"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">Simpan Jadwal</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="tentang" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="LOGO INTERCLASS.jpg" class="h-8 mr-2">
+                        <h3 class="text-xl font-bold">INTER CLASS</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Bimbingan belajar privat profesional untuk membantu siswa mencapai potensi akademik terbaik mereka.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/bimbel.interclass?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="ig-removebg-preview.png" alt="Icon Instagram putih" class="h-6"></a>
+                        <a href="https://wa.me/6208176800612"><img src="wa-removebg-preview.png" alt="Icon Whatsapp" class="h-6"></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white">Beranda</a></li>
+                        <li><a href="#jadwal" class="text-gray-300 hover:text-white">Jadwal</a></li>
+                        <li><a href="#ujian" class="text-gray-300 hover:text-white">Ujian</a></li>
+                        <li><a href="https://wa.me/6208176800612" class="text-gray-300 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
+                    <div class="flex items-center mb-2">
+                       <a href="https://g.co/kgs/uVgkwE4"><img src="alamat-removebg-preview.png" class="h-6 mr-9"></a>
+                        <span class="text-gray-300">Alamat : Jl. Manggis Blok EA No. 15 Kompleks KS Pagebangan
+RT 005 / RW 008 Desa Ciwaduk Kecamatan , Cilegon</span>
+                    </div>
+                    <div class="flex items-center mb-3">
+                      <a href="https://wa.me/6208176800612"><img src="wa-removebg-preview.png" class="h-5 mr-1"></a> 
+                        <span class="text-gray-300">+62 817 6800 612</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="email-removebg-preview.png" class="h-6 mr-5">
+                        <span class="text-gray-300">Bimbel.Interclass@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>© 2025 Interclass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Login Modal Toggle
+        const loginBtn = document.getElementById('loginBtn');
+        const closeModal = document.getElementById('closeModal');
+        const loginModal = document.getElementById('loginModal');
+        const btnStudent = document.getElementById('btnStudent');
+        const btnTutor = document.getElementById('btnTutor');
+        const studentForm = document.getElementById('studentForm');
+        const tutorForm = document.getElementById('tutorForm');
+        
+        loginBtn.addEventListener('click', () => {
+            loginModal.classList.remove('hidden');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            loginModal.classList.add('hidden');
+        });
+        
+        btnStudent.addEventListener('click', () => {
+            btnStudent.classList.add('active');
+            btnTutor.classList.remove('active');
+            studentForm.classList.add('active');
+            tutorForm.classList.remove('active');
+        });
+        
+        btnTutor.addEventListener('click', () => {
+            btnTutor.classList.add('active');
+            btnStudent.classList.remove('active');
+            tutorForm.classList.add('active');
+            studentForm.classList.remove('active');
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === loginModal) {
+                loginModal.classList.add('hidden');
+            }
+        });
+        
+        // Schedule Modal Toggle
+        const addSchedule = document.getElementById('addSchedule');
+        const scheduleModal = document.getElementById('scheduleModal');
+        const closeScheduleModal = document.getElementById('closeScheduleModal');
+        
+        addSchedule.addEventListener('click', () => {
+            scheduleModal.classList.remove('hidden');
+        });
+        
+        closeScheduleModal.addEventListener('click', () => {
+            scheduleModal.classList.add('hidden');
+        });
+        
+        // Close schedule modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === scheduleModal) {
+                scheduleModal.classList.add('hidden');
+            }
+        });
+        
+        // Form submission handling
+        document.getElementById('studentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('studentEmail').value;
+            const password = document.getElementById('studentPassword').value;
+            console.log('Student login attempt:', {email, password});
+            // Here you would typically send this data to your backend
+            alert('Login siswa berhasil!');
+            loginModal.classList.add('hidden');
+        });
+        
+        document.getElementById('tutorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('tutorEmail').value;
+            const password = document.getElementById('tutorPassword').value;
+            console.log('Tutor login attempt:', {email, password});
+            // Here you would typically send this data to your backend
+            alert('Login tentor berhasil!');
+            loginModal.classList.add('hidden');
+        });
+        
+        document.getElementById('newScheduleForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const subject = document.getElementById('subject').value;
+            const className = document.getElementById('class').value;
+            const date = document.getElementById('date').value;
+            const startTime = document.getElementById('startTime').value;
+            const endTime = document.getElementById('endTime').value;
+            const type = document.getElementById('type').value;
+            const notes = document.getElementById('notes').value;
+            
+            console.log('New schedule:', {subject, className, date, startTime, endTime, type, notes});
+            // Here you would typically send this data to your backend
+            alert('Jadwal baru berhasil ditambahkan!');
+            scheduleModal.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
+

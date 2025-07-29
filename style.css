@@ -1,0 +1,28 @@
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0307e0 0%, #03043a 0%);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgb(3, 9, 93);
+        }
+        
+        .schedule-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(9, 17, 97, 0.975);
+        }
+        
+        .toggle-form {
+            display: none;
+        }
+        
+        .toggle-form.active {
+            display: block;
+        }
